@@ -1,0 +1,7 @@
+.vt-split .vt-left,
+.vt-split .vt-right,
+.vt-split .vt-bar{
+  float: left;
+  height: 100%;
+  border: 1px solid black;
+}

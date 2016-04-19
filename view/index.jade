@@ -1,0 +1,21 @@
+include ./mixin.jade
+
+doctype html
+html(lang="en")
+  head
+    title Task Breaks
+    link(rel="stylesheet", src="lib/pure-min.css")
+    link(rel="stylesheet", src="styles/style.css")
+  body
+    #content
+      vt-split
+        slot(name="left")
+          p hoge
+        slot(name="right")
+          p fuga
+    #title
+      h1 Hello {{name}}
+    script(type="text/javascript", src="lib/vue.min.js")
+    script(type="text/javascript", src="bundle.js")
+    script.
+    include ./component.jade

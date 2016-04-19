@@ -1,0 +1,9 @@
+include ./mixin.jade
+
++component('vt-split-template')
+  .vt-split
+    .vt-left(:style="{width: pos + '%'}")
+      slot(name="left")
+    .vt-bar
+    .vt-right(:style="{width: (1 - pos) + '%'}")
+      slot(name="right")
