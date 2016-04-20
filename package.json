@@ -7,7 +7,7 @@
     "eslint": "eslint scripts",
     "eslint:fix": "npm run eslint -- --fix",
     "browserify": "browserify scripts/bundle.js -t babelify -o bundle.js",
-    "babel": "babel scripts/index.js -t babelify -o bundle.js",
+    "babel": "babel scripts/index.js --out-file index.js",
     "jade": "jade view/index.jade --out ./",
     "test": "mocha test --compilers js:babel-register",
     "build": "npm run eslint && npm run test && npm run babel && npm run jade"

@@ -40,3 +40,4 @@ jspm_packages
 # auto generate files
 bundle.js
 index.html
+index.js
